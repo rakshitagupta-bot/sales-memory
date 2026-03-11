@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sales Memory — CRM that works like you actually sell</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="nav">
+    <span class="logo">Sales Memory</span>
+    <div class="nav-right">
+      <a href="https://t.me/SalesMemoryBot" target="_blank" class="nav-link">Open in Telegram</a>
+      <a href="#signup" class="nav-cta">Start Free</a>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="badge">Early Access · Free During Beta</div>
+      <h1>Deals don't die<br />in a dramatic moment.</h1>
+      <p class="hero-sub">
+        They die in the 48-hour gap between a good conversation
+        and the follow-up that never happened.
+      </p>
+      <p class="hero-sub hero-sub--bold">
+        Sales Memory is a Telegram bot that captures your deals from WhatsApp automatically.
+        No logging. No setup. No CRM admin. Value in 30 seconds, Day 1.
+      </p>
+      <div class="hero-actions">
+        <a href="#signup" class="btn-primary">Start Free →</a>
+        <a href="https://t.me/SalesMemoryBot" target="_blank" class="btn-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.88 13.47l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.834.946l-.566-.857z"/></svg>
+          Open in Telegram
+        </a>
+      </div>
+      <p class="hero-note">Takes 30 seconds. No credit card required.</p>
+    </div>
+  </section>
+
+  <!-- ── STATS BAR ── -->
+  <section class="stats">
+    <div class="stats-inner">
+      <div class="stat">
+        <span class="stat-num">10</span>
+        <span class="stat-label">Founder interviews</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">16</span>
+        <span class="stat-label">CRMs evaluated</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">6 wks</span>
+        <span class="stat-label">Average CRM abandonment</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">70%</span>
+        <span class="stat-label">Of deals happen on WhatsApp</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PAIN ── -->
+  <section class="pain">
+    <div class="container">
+      <p class="pain-label">Sound familiar?</p>
+      <div class="pain-quotes">
+        <div class="quote-card">
+          <p>"I scroll through 50 WhatsApp messages before every call just to remember what we discussed last time."</p>
+          <span class="quote-attr">— Pre-seed SaaS founder, Bengaluru</span>
+        </div>
+        <div class="quote-card">
+          <p>"I tried HubSpot, Zoho, Notion CRM. Abandoned all of them within 6 weeks. The logging just kills me."</p>
+          <span class="quote-attr">— B2B services founder, Mumbai</span>
+        </div>
+        <div class="quote-card">
+          <p>"An investor asked me for my pipeline. I spent 40 minutes reconstructing it from memory."</p>
+          <span class="quote-attr">— Seed-stage founder, Delhi NCR</span>
+        </div>
+      </div>
+      <p class="pain-source">Composite findings · 10 Indian B2B founder interviews · March 2026</p>
+    </div>
+  </section>
+
+  <!-- ── THE REAL PROBLEM ── -->
+  <section class="problem">
+    <div class="container container--narrow">
+      <p class="overline">The root cause</p>
+      <h2>Every CRM was built for the wrong person.</h2>
+      <p class="problem-sub">
+        Every CRM on the market was designed for a VP of Sales with a team, an admin, and a defined process.
+        When solo founders try to use them, the same breakdown happens every time — not because of poor discipline, but because of architecture.
+      </p>
+      <div class="breakdown">
+        <div class="breakdown-step">
+          <span class="breakdown-num">1</span>
+          <div>
+            <strong>CRM asks you to define your pipeline stages</strong>
+            <p>You don't know your process yet. You're still figuring it out.</p>
+          </div>
+        </div>
+        <div class="breakdown-step">
+          <span class="breakdown-num">2</span>
+          <div>
+            <strong>Every conversation requires manual logging</strong>
+            <p>Logging competes with actually selling. One always loses.</p>
+          </div>
+        </div>
+        <div class="breakdown-step">
+          <span class="breakdown-num">3</span>
+          <div>
+            <strong>Logging fatigue sets in within days</strong>
+            <p>Data gets incomplete. The CRM becomes a lie.</p>
+          </div>
+        </div>
+        <div class="breakdown-step">
+          <span class="breakdown-num">4</span>
+          <div>
+            <strong>CRM is abandoned by week 6</strong>
+            <p>You're back to WhatsApp + memory + a spreadsheet you'll never update.</p>
+          </div>
+        </div>
+        <div class="breakdown-step">
+          <span class="breakdown-num">5</span>
+          <div>
+            <strong>Deals die in the follow-up gap</strong>
+            <p>No system means no reminders. Warm leads go cold silently.</p>
+          </div>
+        </div>
+      </div>
+      <p class="problem-research">
+        This pattern was identical across all 16 CRMs we evaluated — regardless of price, UX, or positioning.
+        The problem isn't the tool. It's the input model.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── WHAT IT IS ── -->
+  <section class="what">
+    <div class="container container--narrow">
+      <p class="overline">The solution</p>
+      <h2>The conversation IS the log.</h2>
+      <p class="what-sub">
+        Sales Memory inverts the relationship between conversation and record.
+        Instead of logging what happened, you forward what happened.
+        The bot does the rest.
+      </p>
+      <div class="comparison">
+        <div class="comparison-col comparison-col--before">
+          <p class="comparison-label">Every CRM today</p>
+          <ul>
+            <li>Conversation requires manual logging</li>
+            <li>Open CRM after every call to update it</li>
+            <li>Value arrives after weeks of consistent input</li>
+            <li>Built for VP Sales with 10 reps</li>
+            <li>Fails when you go dark for 2 weeks</li>
+            <li>Abandoned by week 6</li>
+          </ul>
+        </div>
+        <div class="comparison-col comparison-col--after">
+          <p class="comparison-label">Sales Memory</p>
+          <ul>
+            <li>Conversation IS the log</li>
+            <li>Bot captures via forward or voice note</li>
+            <li>Value in the first 30 seconds — Day 1</li>
+            <li>Built for the founder who is the rep</li>
+            <li>Catches up automatically when you return</li>
+            <li>Nothing to abandon — nothing to maintain</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 3 INPUT MODES ── -->
+  <section class="inputs">
+    <div class="container">
+      <p class="overline">How you capture</p>
+      <h2>Three ways to log a deal.<br />All take under 30 seconds.</h2>
+      <p class="section-sub">No forms. No fields. No friction. Whatever you're already doing becomes the input.</p>
+      <div class="input-grid">
+
+        <div class="input-card">
+          <div class="input-icon">💬</div>
+          <h3>Forward a WhatsApp chat</h3>
+          <p>
+            Select any WhatsApp conversation → long press → forward to the Sales Memory bot.
+            Under 5 seconds. The bot extracts the contact, company, deal stage, and next action automatically.
+          </p>
+          <div class="input-tag">Most common</div>
+        </div>
+
+        <div class="input-card">
+          <div class="input-icon">🎙️</div>
+          <h3>Send a voice note after a call</h3>
+          <p>
+            Just spoke to a prospect? Open Telegram, press the mic, speak for 30 seconds.
+            The bot transcribes it and creates a structured deal note — contact, outcome, next step — automatically.
+          </p>
+          <div class="input-tag">Best for calls</div>
+        </div>
+
+        <div class="input-card">
+          <div class="input-icon">📸</div>
+          <h3>Screenshot a LinkedIn message or business card</h3>
+          <p>
+            Screenshot any message, email, or card — send it to the bot.
+            It reads the image, extracts the contact details and intent, and creates or updates the deal record.
+          </p>
+          <div class="input-tag">Multi-channel</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BOT COMMANDS ── -->
+  <section class="commands">
+    <div class="container">
+      <p class="overline">What you can ask the bot</p>
+      <h2>Your pipeline, in one message.</h2>
+      <p class="section-sub">No dashboard to open. No app to switch. Ask the bot — get the answer.</p>
+      <div class="command-grid">
+
+        <div class="command-card">
+          <div class="command-line">
+            <code>/context TechCorp</code>
+          </div>
+          <p>Full deal brief — last conversation, open questions, budget signal, suggested talking point — returned in under 5 seconds. Stop scrolling WhatsApp before every call.</p>
+        </div>
+
+        <div class="command-card">
+          <div class="command-line">
+            <code>/deals</code>
+          </div>
+          <p>Live pipeline snapshot: all deals by stage, heat-ranked by recency and activity. Answer investor questions on the spot without reconstructing from memory.</p>
+        </div>
+
+        <div class="command-card">
+          <div class="command-line">
+            <code>/note [anything]</code>
+          </div>
+          <p>Log a freeform note against any existing deal. No navigation, no form. Type what happened and move on.</p>
+        </div>
+
+        <div class="command-card">
+          <div class="command-line">
+            <code>/won · /lost</code>
+          </div>
+          <p>Close a deal in one message. The pipeline updates instantly. The bot prompts an optional note on what worked or what didn't.</p>
+        </div>
+
+        <div class="command-card">
+          <div class="command-line">
+            <code>Natural language</code>
+          </div>
+          <p>"What's the status with Rahul from Juspay?" The bot understands plain questions — no command syntax required.</p>
+        </div>
+
+        <div class="command-card">
+          <div class="command-line">
+            <code>Daily 8 AM digest</code>
+          </div>
+          <p>Every morning: deals needing follow-up, overdue deals, your hottest lead. Start the day with a plan, not a scramble.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── DAY IN THE LIFE ── -->
+  <section class="daylife">
+    <div class="container">
+      <p class="overline">A real founder's day</p>
+      <h2>Before and after.</h2>
+      <div class="daylife-grid">
+        <div class="daylife-col daylife-col--before">
+          <p class="daylife-label">Without Sales Memory</p>
+          <div class="daylife-item">
+            <span class="time">8 AM</span>
+            <span class="event">Scrolls WhatsApp for 12 minutes trying to reconstruct yesterday's conversations. No system, just memory.</span>
+          </div>
+          <div class="daylife-item">
+            <span class="time">10 AM</span>
+            <span class="event">Great discovery call. Means to log it later. Never does. Context lost.</span>
+          </div>
+          <div class="daylife-item">
+            <span class="time">12 PM</span>
+            <span class="event">Sends a proposal. No reminder set. Moves to the next task. Follow-up never happens.</span>
+          </div>
+          <div class="daylife-item">
+            <span class="time">3 PM</span>
+            <span class="event">A warm lead from 2 weeks ago goes cold. Had no idea they needed a touch. Deal lost.</span>
+          </div>
+          <div class="daylife-item">
+            <span class="time">5 PM</span>
+            <span class="event">Pre-call prep: scrolls 50 WhatsApp messages to remember what was discussed 3 weeks ago. 12 minutes wasted.</span>
+          </div>
+          <div class="daylife-item">
+            <span class="time">8 PM</span>
+            <span class="event">Investor asks for pipeline. Reconstructs from memory for 40 minutes. Numbers are approximate at best.</span>
+          </div>
+        </div>
+        <div class="daylife-col daylife-col--after">
+          <p class="daylife-label">With Sales Memory</p>
+          <div class="daylife-item">
+            <span class="time">8 AM</span>
+            <span class="event">Reviews morning digest. 3 deals need follow-up, 2 are overdue. Day planned in 2 minutes.</span>
+          </div>
+          <div class="daylife-item">
+            <span class="time">10 AM</span>
+            <span class="event">Sends a 30-second voice note to the bot right after the call. Deal created. Stage set. Nudge queued for day 3.</span>
+          </div>
+          <div class="daylife-item">
+            <span class="time">12 PM</span>
+            <span class="event">Logs /note "sent proposal". Bot auto-queues a follow-up reminder for 48 hours. Done in 10 seconds.</span>
+          </div>
+          <div class="daylife-item">
+            <span class="time">3 PM</span>
+            <span class="event">Bot nudges: "Warm lead from 12 days ago. Last status: interested. Follow up?" Deal saved with one tap.</span>
+          </div>
+          <div class="daylife-item">
+            <span class="time">5 PM</span>
+            <span class="event">Types /context TechCorp. Full deal brief returned in 4 seconds. Walks into the call prepared.</span>
+          </div>
+          <div class="daylife-item">
+            <span class="time">8 PM</span>
+            <span class="event">Types /deals. Live pipeline snapshot in under 3 seconds. Investor question answered on the spot.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TELEGRAM CTA ── -->
+  <section class="tg-cta">
+    <div class="tg-cta-inner">
+      <div class="tg-cta-text">
+        <h2>Already have Telegram?</h2>
+        <p>Open the bot right now. Tap Start. Forward your first WhatsApp conversation. First deal logged in under 30 seconds.</p>
+      </div>
+      <a href="https://t.me/SalesMemoryBot" target="_blank" class="btn-telegram-large">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.88 13.47l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.834.946l-.566-.857z"/></svg>
+        Open @SalesMemoryBot
+      </a>
+    </div>
+  </section>
+
+  <!-- ── HOW IT WORKS ── -->
+  <section class="how">
+    <div class="container">
+      <p class="overline">Getting started</p>
+      <h2>Up and running in 3 steps.</h2>
+      <p class="section-sub">No onboarding. No pipeline setup. No fields to fill. Value before you finish reading this.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h3>Sign up — takes 30 seconds</h3>
+            <p>Enter your name, email, and company below. We create your account and generate a personal Telegram link tied to you.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h3>Click your link, tap Start in Telegram</h3>
+            <p>Your personal link opens Telegram directly. Tap Start. The bot says hello. That's the entire setup — done in under 10 seconds.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h3>Forward your first WhatsApp conversation</h3>
+            <p>The bot reads it, extracts the deal details, and shows you a card to confirm in one tap. First deal logged in under 30 seconds. No form. No fields.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHY TELEGRAM ── -->
+  <section class="why-tg">
+    <div class="container container--narrow">
+      <p class="overline">A common question</p>
+      <h2>Why Telegram and not WhatsApp directly?</h2>
+      <p class="why-tg-sub">
+        We get this question a lot. The short answer: Meta permanently prohibits personal WhatsApp integration.
+        It's not a workaround we're building around — it's a permanent wall.
+      </p>
+      <div class="why-tg-points">
+        <div class="why-tg-point">
+          <span class="why-icon">🔒</span>
+          <div>
+            <strong>WhatsApp integration is architecturally impossible</strong>
+            <p>Meta's API only supports business numbers, not personal accounts. All 16 CRMs we evaluated have email sync. Zero have personal WhatsApp capture. This gap is permanent.</p>
+          </div>
+        </div>
+        <div class="why-tg-point">
+          <span class="why-icon">⚡</span>
+          <div>
+            <strong>Forwarding to Telegram takes under 5 seconds</strong>
+            <p>Select a WhatsApp thread → long press → forward. That's it. This is less friction than any form-based CRM entry ever built.</p>
+          </div>
+        </div>
+        <div class="why-tg-point">
+          <span class="why-icon">🎙️</span>
+          <div>
+            <strong>Telegram has native voice notes — no extra app</strong>
+            <p>Press the mic button inside the bot. Speak. Done. No app switch. No recording tool. Same interface you already use.</p>
+          </div>
+        </div>
+        <div class="why-tg-point">
+          <span class="why-icon">✅</span>
+          <div>
+            <strong>You stay in control — fully DPDPA 2023 compliant</strong>
+            <p>Nothing is auto-captured. You choose what to forward. The system only sees what you send it. No scraping, no background access.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SIGNUP ── -->
+  <section class="signup" id="signup">
+    <div class="signup-card">
+      <h2>Get your Telegram link</h2>
+      <p class="signup-sub">Free during beta · No credit card · 30 seconds to set up</p>
+
+      <form id="signup-form" novalidate>
+        <div class="field">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="Arjun Mehta" required />
+        </div>
+        <div class="field">
+          <label for="email">Work email</label>
+          <input type="email" id="email" name="email" placeholder="arjun@company.com" required />
+        </div>
+        <div class="field">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company" placeholder="TechCorp" required />
+        </div>
+        <p id="form-error" class="form-error" hidden></p>
+        <button type="submit" id="submit-btn" class="btn-primary btn-full">
+          Get my Telegram link →
+        </button>
+      </form>
+
+      <div id="success-panel" hidden>
+        <div class="success-check">✓</div>
+        <h3 id="success-name">You're in!</h3>
+        <p>Click below to connect your Telegram. Once you tap Start, you're set up.</p>
+        <a id="telegram-link" href="#" target="_blank" class="btn-telegram">
+          Open in Telegram →
+        </a>
+        <p class="success-note">
+          This link is personal to you — don't share it.<br />
+          After you tap Start, forward any WhatsApp conversation. First deal logs in under 30 seconds.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-inner">
+      <span class="logo">Sales Memory</span>
+      <p>Built for Indian B2B founders · Beta 2026</p>
+      <a href="https://t.me/SalesMemoryBot" target="_blank" class="footer-tg">Open in Telegram →</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
