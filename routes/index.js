@@ -17,7 +17,7 @@ router.post('/signup', async (req, res) => {
 
   try {
     const { data, error } = await db
-      .from('users')
+      .from('signups')
       .insert([{ name, email, company }])
       .select()
       .single();
